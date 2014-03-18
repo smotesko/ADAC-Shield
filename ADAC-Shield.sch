@@ -14775,8 +14775,8 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <part name="JACK_IN" library="smok" deviceset="ST-11M-0" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="22k"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="22k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -14807,16 +14807,42 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
-<part name="C20" library="rcl" deviceset="CPOL-EU" device="A" value="47"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="220"/>
+<part name="P+7" library="supply1" deviceset="V+" device=""/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C24" library="rcl" deviceset="CPOL-EU" device="A" value="47"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0805" value="1"/>
+<part name="P+8" library="supply1" deviceset="V+" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C26" library="rcl" deviceset="CPOL-EU" device="A" value="47"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0805" value="1"/>
+<part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="C20" library="rcl" deviceset="CPOL-EU" device="A" value="47"/>
+<part name="C22" library="rcl" deviceset="CPOL-EU" device="A" value="47"/>
+<part name="C27" library="rcl" deviceset="CPOL-EU" device="B" value="100"/>
+<part name="C28" library="rcl" deviceset="CPOL-EU" device="B" value="100"/>
+<part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="GND30" library="supply1" deviceset="GND" device=""/>
+<part name="JACK_OUT" library="smok" deviceset="ST-11M-0" device=""/>
+<part name="GND31" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-63.5" y="53.34" size="1.778" layer="91">Low Gain</text>
 <text x="-66.04" y="-2.54" size="1.778" layer="91">Low Gain</text>
-<text x="-27.94" y="-170.18" size="1.778" layer="91">NEED TO CHECK THIS PART</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-220.98" y="0"/>
@@ -14892,9 +14918,36 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <instance part="GND16" gate="1" x="-114.3" y="-205.74"/>
 <instance part="GND17" gate="1" x="-104.14" y="-205.74"/>
 <instance part="C19" gate="G$1" x="-30.48" y="-157.48" rot="R180"/>
-<instance part="C20" gate="G$1" x="-38.1" y="-157.48" rot="R180"/>
 <instance part="GND18" gate="1" x="-38.1" y="-162.56"/>
 <instance part="GND19" gate="1" x="-30.48" y="-162.56"/>
+<instance part="GND20" gate="1" x="-2.54" y="-162.56" rot="R270"/>
+<instance part="C21" gate="G$1" x="-30.48" y="-172.72" rot="R180"/>
+<instance part="GND21" gate="1" x="-38.1" y="-177.8"/>
+<instance part="GND22" gate="1" x="-30.48" y="-177.8"/>
+<instance part="R17" gate="G$1" x="-45.72" y="-167.64" rot="R180"/>
+<instance part="P+7" gate="1" x="-53.34" y="-162.56"/>
+<instance part="C23" gate="G$1" x="40.64" y="-144.78" rot="R90"/>
+<instance part="C24" gate="G$1" x="40.64" y="-137.16" rot="R90"/>
+<instance part="R18" gate="G$1" x="38.1" y="-127" rot="R90"/>
+<instance part="P+8" gate="1" x="38.1" y="-116.84"/>
+<instance part="GND23" gate="1" x="48.26" y="-137.16" rot="R90"/>
+<instance part="GND24" gate="1" x="48.26" y="-144.78" rot="R90"/>
+<instance part="GND25" gate="1" x="40.64" y="-152.4" rot="R90"/>
+<instance part="C25" gate="G$1" x="38.1" y="-190.5" rot="R180"/>
+<instance part="C26" gate="G$1" x="43.18" y="-187.96"/>
+<instance part="R19" gate="G$1" x="50.8" y="-182.88" rot="R180"/>
+<instance part="GND26" gate="1" x="38.1" y="-195.58"/>
+<instance part="GND27" gate="1" x="43.18" y="-195.58"/>
+<instance part="+3V4" gate="G$1" x="58.42" y="-177.8"/>
+<instance part="GND28" gate="1" x="40.64" y="-177.8" rot="R90"/>
+<instance part="C20" gate="G$1" x="-38.1" y="-170.18"/>
+<instance part="C22" gate="G$1" x="-38.1" y="-154.94"/>
+<instance part="C27" gate="G$1" x="-180.34" y="66.04"/>
+<instance part="C28" gate="G$1" x="-160.02" y="66.04"/>
+<instance part="GND29" gate="1" x="-180.34" y="58.42"/>
+<instance part="GND30" gate="1" x="-160.02" y="58.42"/>
+<instance part="JACK_OUT" gate="G$1" x="-93.98" y="-152.4"/>
+<instance part="GND31" gate="1" x="-106.68" y="-160.02"/>
 </instances>
 <busses>
 </busses>
@@ -14911,11 +14964,19 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <wire x1="-180.34" y1="71.12" x2="-180.34" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-180.34" y1="68.58" x2="-175.26" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="+"/>
+<junction x="-180.34" y="68.58"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="-167.64" y1="-101.6" x2="-167.64" y2="-99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="55.88" y1="-182.88" x2="58.42" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-182.88" x2="58.42" y2="-180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -15054,12 +15115,65 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <wire x1="-104.14" y1="-198.12" x2="-104.14" y2="-203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="+"/>
-<pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C19" gate="G$1" pin="1"/>
 <pinref part="GND19" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ADC" gate="G$1" pin="VRN"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="2.54" y1="-162.56" x2="0" y2="-162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="1"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="-"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ADC" gate="G$1" pin="VSSA"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="35.56" y1="-152.4" x2="38.1" y2="-152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C26" gate="G$1" pin="-"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ADC" gate="G$1" pin="VSSD"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="35.56" y1="-177.8" x2="38.1" y2="-177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND21" gate="1" pin="GND"/>
+<pinref part="C20" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="C22" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="C27" gate="G$1" pin="-"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="-"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JACK_OUT" gate="G$1" pin="SLEEVE"/>
+<wire x1="-104.14" y1="-147.32" x2="-106.68" y2="-147.32" width="0.1524" layer="91"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="-106.68" y1="-147.32" x2="-106.68" y2="-157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15083,6 +15197,8 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <wire x1="-160.02" y1="71.12" x2="-160.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-160.02" y1="68.58" x2="-165.1" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="+"/>
+<junction x="-160.02" y="68.58"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="V+"/>
@@ -15108,6 +15224,17 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="P+6" gate="1" pin="V+"/>
 <wire x1="-182.88" y1="-101.6" x2="-182.88" y2="-99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="P+7" gate="1" pin="V+"/>
+<wire x1="-50.8" y1="-167.64" x2="-53.34" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-167.64" x2="-53.34" y2="-165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="P+8" gate="1" pin="V+"/>
+<wire x1="38.1" y1="-121.92" x2="38.1" y2="-119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15409,6 +15536,11 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <junction x="-114.3" y="-180.34"/>
 <label x="-101.6" y="-180.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JACK_OUT" gate="G$1" pin="TIP"/>
+<wire x1="-104.14" y1="-154.94" x2="-109.22" y2="-154.94" width="0.1524" layer="91"/>
+<label x="-129.54" y="-154.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RIGHT_DAC_OUT" class="0">
 <segment>
@@ -15419,6 +15551,11 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <wire x1="-104.14" y1="-190.5" x2="-104.14" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="-104.14" y="-185.42"/>
 <label x="-101.6" y="-185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JACK_OUT" gate="G$1" pin="RING"/>
+<wire x1="-104.14" y1="-149.86" x2="-109.22" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-129.54" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DAC_BCK" class="0">
@@ -15479,12 +15616,103 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="C20" gate="G$1" pin="-"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="-152.4" x2="-30.48" y2="-152.4" width="0.1524" layer="91"/>
 <pinref part="ADC" gate="G$1" pin="VREF"/>
 <wire x1="-30.48" y1="-152.4" x2="2.54" y2="-152.4" width="0.1524" layer="91"/>
 <junction x="-30.48" y="-152.4"/>
+<pinref part="C22" gate="G$1" pin="+"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="-167.64" x2="-38.1" y2="-167.64" width="0.1524" layer="91"/>
+<pinref part="ADC" gate="G$1" pin="VRP"/>
+<wire x1="-38.1" y1="-167.64" x2="-30.48" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="-167.64" x2="2.54" y2="-167.64" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-167.64"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="C20" gate="G$1" pin="+"/>
+<junction x="-38.1" y="-167.64"/>
+</segment>
+</net>
+<net name="ADC_SFOR" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="SFOR"/>
+<wire x1="2.54" y1="-172.72" x2="0" y2="-172.72" width="0.1524" layer="91"/>
+<label x="-15.24" y="-172.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC_PWON" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="PWON"/>
+<wire x1="2.54" y1="-177.8" x2="0" y2="-177.8" width="0.1524" layer="91"/>
+<label x="-15.24" y="-177.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC_SYSCLK" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="SYSCLK"/>
+<wire x1="2.54" y1="-182.88" x2="0" y2="-182.88" width="0.1524" layer="91"/>
+<label x="-15.24" y="-182.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="VDDA"/>
+<wire x1="35.56" y1="-147.32" x2="38.1" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-147.32" x2="38.1" y2="-144.78" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="C24" gate="G$1" pin="+"/>
+<wire x1="38.1" y1="-144.78" x2="38.1" y2="-137.16" width="0.1524" layer="91"/>
+<junction x="38.1" y="-144.78"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="-137.16" x2="38.1" y2="-132.08" width="0.1524" layer="91"/>
+<junction x="38.1" y="-137.16"/>
+</segment>
+</net>
+<net name="ADC_MSSEL" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="MSSEL"/>
+<wire x1="35.56" y1="-157.48" x2="38.1" y2="-157.48" width="0.1524" layer="91"/>
+<label x="38.1" y="-157.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC_DATAO" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="DATAO"/>
+<wire x1="35.56" y1="-162.56" x2="38.1" y2="-162.56" width="0.1524" layer="91"/>
+<label x="38.1" y="-162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC_WS" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="WS"/>
+<wire x1="35.56" y1="-167.64" x2="38.1" y2="-167.64" width="0.1524" layer="91"/>
+<label x="38.1" y="-167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC_BCK" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="BCK"/>
+<wire x1="35.56" y1="-172.72" x2="38.1" y2="-172.72" width="0.1524" layer="91"/>
+<label x="38.1" y="-172.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="ADC" gate="G$1" pin="VDDD"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-182.88" x2="38.1" y2="-182.88" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="-182.88" x2="43.18" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-182.88" x2="45.72" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-185.42" x2="38.1" y2="-182.88" width="0.1524" layer="91"/>
+<junction x="38.1" y="-182.88"/>
+<pinref part="C26" gate="G$1" pin="+"/>
+<wire x1="43.18" y1="-185.42" x2="43.18" y2="-182.88" width="0.1524" layer="91"/>
+<junction x="43.18" y="-182.88"/>
 </segment>
 </net>
 </nets>

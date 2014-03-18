@@ -3,6 +3,13 @@ R 0805:
 	47 Ohm
 	100 Ohm
 	220 kOhm
+
 C 0805: 
 	10 nF
+
+CPOL:
+	100uF size B http://www.rcscomponents.kiev.ua/product/100uF%2010V%20ELV%20SMD%20sizeB%205x5.5%20%28ELV101M10RB%29%20%28%FD%EB%E5%EA%F2%F0%EE%EB%E8%F2%E8%F7%E5%F1%EA%E8%E9%20%EA%EE%ED%E4%E5%ED%F1%E0%F2%EE%F0%20SMD%29.html
+
+
+
 
